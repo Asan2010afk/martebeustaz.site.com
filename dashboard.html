@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Жеке кабинет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <script src="guard.js"></script> <!-- Защита от неавторизованного доступа -->
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">@martebe_ustaz</a>
+  
+    <div class="burger" onclick="toggleBurger()">☰</div>
+  
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">🏠 Басты бет</a>
+      <a href="about.html">🧭 Біз туралы</a>
+      <a href="posts.html">📚 Посттар</a>
+      <a href="contact.html">📞 Байланыс</a>
+      <a href="auth.html">🔑 Кіру / Тіркелу</a>
+      <a href="dashboard.html">👤 Профиль</a>
+    </nav>
+  </header>
+
+<div class="profile-card">
+  <h2>👤 Жеке кабинет</h2>
+
+  <div class="avatar-wrapper">
+    <img id="avatar" src="default-avatar.png" alt="Avatar" class="avatar-img">
+    <label class="upload-btn">
+      Аватарды өзгерту
+      <input type="file" id="avatar-input" accept="image/*" hidden>
+    </label>
+  </div>
+
+  <div class="profile-fields">
+    <label>Атыңыз:</label>
+    <input type="text" id="name-input" placeholder="Аты-жөніңіз">
+
+    <label>Email:</label>
+    <input type="email" id="email-input" placeholder="example@mail.com">
+  </div>
+
+  <div class="profile-buttons">
+    <button class="save-btn" onclick="saveProfile()">💾 Сақтау</button>
+    <button class="logout-btn" onclick="logout()">🚪 Шығу</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>

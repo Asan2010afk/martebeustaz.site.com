@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Martebe Ustaz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="aos.js" />
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="site-header">
+    <a href="index.html" class="logo">@martebe_ustaz</a>
+  
+    <div class="burger" onclick="toggleBurger()">☰</div>
+  
+    <nav class="nav-menu" id="navMenu">
+      <a href="about.html" data-kz="🧭 Біз туралы" data-ru="🧭 О нас"></a>
+      <a href="posts.html" data-kz="📚 Посттар" data-ru="📚 Посты"></a>
+      <a href="contacts.html" data-kz="📞 Байланыс" data-ru="📞 Связь"></a>
+      <a href="auth.html" data-kz="🔑 Кіру / Тіркелу" data-ru="🔑 Вход/Регистрация"></a>
+      <a href="dashboard.html" data-kz="👤 Профиль" data-ru="👤 Профиль"></a>
+    </nav>
+  </header>
+
+      <button id="backToTop" title="backtotop">↑</button>
+    </div>
+
+    <div class="theme-toggle">
+      <input type="checkbox" id="themeSwitcher" />
+      <label for="themeSwitcher" class="switch">
+        <span class="slider">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="language-switcher">
+      <button id="kzBtn">Қаз</button>
+      <button id="ruBtn">Рус</button>
+    </div>
+
+  </header>
+
+  <section class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Біз туралы</h2>
+      <p>Мен бастауыш сынып мұғалімімін. 28 жылдық тәжірибем бар. Осы парақша арқылы білім, мотивация және оқыту әдістерін бөлісемін.</p>
+      <img src="assets/images/profile.jpg" alt="Ұстаз" class="about-img" />
+    </div>
+  </section>
+
+  <script src="aos.js"></script>
+  <script src="main.js"></script>
+  <script src="scroll.js"></script>
+</body>
+</html>
